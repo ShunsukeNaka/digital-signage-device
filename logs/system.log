@@ -1,0 +1,219 @@
+64070c8f-cb0e-4cde-9ac7-99c1d65e3973
+check success
+{'responded_at': '2025-09-14 02:24:59', 'status': 'success', 'update_device': {'device_update_token': '7bab70c2-0439-4204-9ce0-2dc3d1e0d396', 'update': True, 'update_index': '01000000', 'updated_at': 'Tue, 26 Aug 2025 09:10:36 GMT'}}
+YES ONE
+<Response [200]>
+{'device': 'test_00_00', 'responded_at': '2025-09-14 02:24:59', 'settings': {'contents': [{'ext': 'png', 'id': 'test_user_00-58286a1c-c469-4f37-9244-048ee451dca0'}], 'created_at': 'Sat, 13 Sep 2025 16:09:47 GMT', 'type': 'multiple'}, 'status': 'success'}
+test_user_00-58286a1c-c469-4f37-9244-048ee451dca0
+/home/tns0/service/content/test_user_00-58286a1c-c469-4f37-9244-048ee451dca0.png
+64070c8f-cb0e-4cde-9ac7-99c1d65e3973
+7bab70c2-0439-4204-9ce0-2dc3d1e0d396
+{'message': 'message: 404 Not Found: Token is None', 'responded_at': '2025-09-14 02:25:02', 'status': 'error'}
+500
+64070c8f-cb0e-4cde-9ac7-99c1d65e3973
+check success
+{'responded_at': '2025-09-14 02:25:39', 'status': 'success', 'update_device': {'device_update_token': 'a7ac8073-cb70-495f-b166-369795c7d91f', 'update': False, 'update_index': '00000000', 'updated_at': 'Tue, 26 Aug 2025 09:10:36 GMT'}}
+NO ONE
+64070c8f-cb0e-4cde-9ac7-99c1d65e3973
+check success
+{'responded_at': '2025-09-14 02:27:15', 'status': 'success', 'update_device': {'device_update_token': '4424678d-ed80-4447-aee7-d995da24d1da', 'update': False, 'update_index': '00000000', 'updated_at': 'Tue, 26 Aug 2025 09:10:36 GMT'}}
+NO ONE
+64070c8f-cb0e-4cde-9ac7-99c1d65e3973
+check success
+{'responded_at': '2025-09-14 02:31:13', 'status': 'success', 'update_device': {'device_update_token': '417a33ab-75f5-46ee-adf3-a80d967f97f4', 'update': False, 'update_index': '00000000', 'updated_at': 'Tue, 26 Aug 2025 09:10:36 GMT'}}
+Not Need Updated
+64070c8f-cb0e-4cde-9ac7-99c1d65e3973
+check success
+{'responded_at': '2025-09-14 02:31:54', 'status': 'success', 'update_device': {'device_update_token': '1f1c1519-348b-44a9-a5a6-e79e62f9f421', 'update': False, 'update_index': '00000000', 'updated_at': 'Tue, 26 Aug 2025 09:10:36 GMT'}}
+Not Need Updated
+64070c8f-cb0e-4cde-9ac7-99c1d65e3973
+check success
+{'responded_at': '2025-09-14 20:02:17', 'status': 'success', 'update_device': {'device_update_token': 'd2ee53cb-4a88-415a-a9cc-7d2ce011611c', 'update': False, 'update_index': '00000000', 'updated_at': 'Tue, 26 Aug 2025 09:10:36 GMT'}}
+Not Need Updated
+64070c8f-cb0e-4cde-9ac7-99c1d65e3973
+check success
+{'responded_at': '2025-09-14 20:11:19', 'status': 'success', 'update_device': {'device_update_token': '1b59acfe-2e52-40e2-b8c6-ec97af6093f3', 'update': False, 'update_index': '00000000', 'updated_at': 'Tue, 26 Aug 2025 09:10:36 GMT'}}
+Not Need Updated
+64070c8f-cb0e-4cde-9ac7-99c1d65e3973
+check success
+{'responded_at': '2025-09-14 20:11:56', 'status': 'success', 'update_device': {'device_update_token': '5030dd2c-db51-491f-86d4-925b22a03b90', 'update': False, 'update_index': '00000000', 'updated_at': 'Tue, 26 Aug 2025 09:10:36 GMT'}}
+Not Need Updated
+64070c8f-cb0e-4cde-9ac7-99c1d65e3973
+check success
+{'responded_at': '2025-09-15 14:12:38', 'status': 'success', 'update_device': {'device_update_token': '5ac07434-99e2-4a9f-824b-fc77080e7a28', 'update': False, 'update_index': '00000000', 'updated_at': 'Tue, 26 Aug 2025 09:10:36 GMT'}}
+Not Need Updated
+64070c8f-cb0e-4cde-9ac7-99c1d65e3973
+check success
+{'responded_at': '2025-09-15 14:13:15', 'status': 'success', 'update_device': {'device_update_token': 'ec2d457e-bad1-481d-85c9-3ba652b3f7d1', 'update': False, 'update_index': '00000000', 'updated_at': 'Tue, 26 Aug 2025 09:10:36 GMT'}}
+Not Need Updated
+64070c8f-cb0e-4cde-9ac7-99c1d65e3973
+check success
+{'responded_at': '2025-09-15 14:35:24', 'status': 'success', 'update_device': {'device_update_token': '89a87c2e-1b5e-4959-9f23-47e127bd81ec', 'update': True, 'update_index': '01000000', 'updated_at': 'Tue, 26 Aug 2025 09:10:36 GMT'}}
+Need Update
+<Response [200]>
+{'device': 'test_00_00', 'responded_at': '2025-09-15 14:35:24', 'settings': {'contents': [{'ext': 'jpg', 'id': 'test_user_00-b3700332-b503-459c-97ff-51c37e7b7b15'}], 'created_at': 'Sat, 13 Sep 2025 16:09:47 GMT', 'type': 'multiple'}, 'status': 'success'}
+test_user_00-b3700332-b503-459c-97ff-51c37e7b7b15
+/home/tns0/service/content/test_user_00-b3700332-b503-459c-97ff-51c37e7b7b15.jpg
+64070c8f-cb0e-4cde-9ac7-99c1d65e3973
+89a87c2e-1b5e-4959-9f23-47e127bd81ec
+{'responded_at': '2025-09-15 14:35:27', 'status': 'success'}
+200
+send return success
+64070c8f-cb0e-4cde-9ac7-99c1d65e3973
+check success
+{'responded_at': '2025-09-15 14:36:04', 'status': 'success', 'update_device': {'device_update_token': '3371e134-5e02-4381-ae3b-ca45ddb6b6d7', 'update': False, 'update_index': '00000000', 'updated_at': 'Tue, 26 Aug 2025 09:10:36 GMT'}}
+Not Need Updated
+64070c8f-cb0e-4cde-9ac7-99c1d65e3973
+check success
+{'responded_at': '2025-09-15 14:36:45', 'status': 'success', 'update_device': {'device_update_token': '526740b4-21b8-4584-9bdd-7fc154eba871', 'update': False, 'update_index': '00000000', 'updated_at': 'Tue, 26 Aug 2025 09:10:36 GMT'}}
+Not Need Updated
+64070c8f-cb0e-4cde-9ac7-99c1d65e3973
+check success
+{'responded_at': '2025-09-15 14:37:26', 'status': 'success', 'update_device': {'device_update_token': '8017d8d7-11f8-447a-9db4-a958661dee33', 'update': False, 'update_index': '00000000', 'updated_at': 'Tue, 26 Aug 2025 09:10:36 GMT'}}
+Not Need Updated
+64070c8f-cb0e-4cde-9ac7-99c1d65e3973
+check success
+{'responded_at': '2025-09-15 14:38:07', 'status': 'success', 'update_device': {'device_update_token': '18d8a6aa-3f47-46f0-bea4-b8f34fe84841', 'update': False, 'update_index': '00000000', 'updated_at': 'Tue, 26 Aug 2025 09:10:36 GMT'}}
+Not Need Updated
+64070c8f-cb0e-4cde-9ac7-99c1d65e3973
+check success
+{'responded_at': '2025-09-15 14:38:45', 'status': 'success', 'update_device': {'device_update_token': 'd1e5b96f-3cc6-4ae4-8610-f70a80cc70fc', 'update': False, 'update_index': '00000000', 'updated_at': 'Tue, 26 Aug 2025 09:10:36 GMT'}}
+Not Need Updated
+64070c8f-cb0e-4cde-9ac7-99c1d65e3973
+check success
+{'responded_at': '2025-09-15 14:41:35', 'status': 'success', 'update_device': {'device_update_token': 'c143c90a-959d-4332-88b5-ee6a1860177f', 'update': False, 'update_index': '00000000', 'updated_at': 'Tue, 26 Aug 2025 09:10:36 GMT'}}
+Not Need Updated
+64070c8f-cb0e-4cde-9ac7-99c1d65e3973
+check success
+{'responded_at': '2025-09-15 14:42:09', 'status': 'success', 'update_device': {'device_update_token': 'cbae5c89-52b4-4138-893c-5a9a31a3ad9a', 'update': True, 'update_index': '01000000', 'updated_at': 'Tue, 26 Aug 2025 09:10:36 GMT'}}
+Need Update
+<Response [200]>
+{'device': 'test_00_00', 'responded_at': '2025-09-15 14:42:09', 'settings': {'contents': [{'ext': 'jpg', 'id': 'test_user_00-b3700332-b503-459c-97ff-51c37e7b7b15'}], 'created_at': 'Sat, 13 Sep 2025 16:09:47 GMT', 'type': 'multiple'}, 'status': 'success'}
+test_user_00-b3700332-b503-459c-97ff-51c37e7b7b15
+/home/tns0/service/content/test_user_00-b3700332-b503-459c-97ff-51c37e7b7b15.jpg
+64070c8f-cb0e-4cde-9ac7-99c1d65e3973
+cbae5c89-52b4-4138-893c-5a9a31a3ad9a
+{'responded_at': '2025-09-15 14:42:13', 'status': 'success'}
+200
+send return success
+64070c8f-cb0e-4cde-9ac7-99c1d65e3973
+check success
+{'responded_at': '2025-09-15 14:42:47', 'status': 'success', 'update_device': {'device_update_token': 'c97f43fa-a37d-44c2-b4af-1089530a3c20', 'update': False, 'update_index': '00000000', 'updated_at': 'Tue, 26 Aug 2025 09:10:36 GMT'}}
+Not Need Updated
+64070c8f-cb0e-4cde-9ac7-99c1d65e3973
+check success
+{'responded_at': '2025-09-15 14:43:36', 'status': 'success', 'update_device': {'device_update_token': '8e70a453-f627-4b8c-a5fb-6866decb444b', 'update': True, 'update_index': '01000000', 'updated_at': 'Tue, 26 Aug 2025 09:10:36 GMT'}}
+Need Update
+<Response [200]>
+{'device': 'test_00_00', 'responded_at': '2025-09-15 14:43:36', 'settings': {'contents': [{'ext': 'png', 'id': 'test_user_00-3414cc7d-a6b3-4f83-82ed-76fb287a40f6'}], 'created_at': 'Sat, 13 Sep 2025 16:09:47 GMT', 'type': 'multiple'}, 'status': 'success'}
+test_user_00-3414cc7d-a6b3-4f83-82ed-76fb287a40f6
+/home/tns0/service/content/test_user_00-3414cc7d-a6b3-4f83-82ed-76fb287a40f6.png
+64070c8f-cb0e-4cde-9ac7-99c1d65e3973
+8e70a453-f627-4b8c-a5fb-6866decb444b
+{'responded_at': '2025-09-15 14:43:39', 'status': 'success'}
+200
+send return success
+64070c8f-cb0e-4cde-9ac7-99c1d65e3973
+check success
+{'responded_at': '2025-09-15 14:44:29', 'status': 'success', 'update_device': {'device_update_token': 'ee555528-8d26-4f31-8e6c-643080d0e7f9', 'update': False, 'update_index': '00000000', 'updated_at': 'Tue, 26 Aug 2025 09:10:36 GMT'}}
+Not Need Updated
+64070c8f-cb0e-4cde-9ac7-99c1d65e3973
+check success
+{'responded_at': '2025-09-15 14:45:16', 'status': 'success', 'update_device': {'device_update_token': '252a5103-8405-4a17-a86f-0ff4c1d92cd1', 'update': False, 'update_index': '00000000', 'updated_at': 'Tue, 26 Aug 2025 09:10:36 GMT'}}
+Not Need Updated
+64070c8f-cb0e-4cde-9ac7-99c1d65e3973
+check success
+{'responded_at': '2025-09-15 14:45:59', 'status': 'success', 'update_device': {'device_update_token': '0e75b6fb-81d2-43b4-bbfa-e197be1470db', 'update': False, 'update_index': '00000000', 'updated_at': 'Tue, 26 Aug 2025 09:10:36 GMT'}}
+Not Need Updated
+64070c8f-cb0e-4cde-9ac7-99c1d65e3973
+check success
+{'responded_at': '2025-09-15 14:46:42', 'status': 'success', 'update_device': {'device_update_token': 'f0302f06-c3a9-4470-916f-217c6842e211', 'update': False, 'update_index': '00000000', 'updated_at': 'Tue, 26 Aug 2025 09:10:36 GMT'}}
+Not Need Updated
+64070c8f-cb0e-4cde-9ac7-99c1d65e3973
+check success
+{'responded_at': '2025-09-15 14:47:26', 'status': 'success', 'update_device': {'device_update_token': 'd6b5416b-ce6d-4650-85b5-5034cd854fc0', 'update': False, 'update_index': '00000000', 'updated_at': 'Tue, 26 Aug 2025 09:10:36 GMT'}}
+Not Need Updated
+64070c8f-cb0e-4cde-9ac7-99c1d65e3973
+check success
+{'responded_at': '2025-09-15 14:48:10', 'status': 'success', 'update_device': {'device_update_token': '64284d01-704d-4bf1-bd6e-c88cf8b9ddc8', 'update': False, 'update_index': '00000000', 'updated_at': 'Tue, 26 Aug 2025 09:10:36 GMT'}}
+Not Need Updated
+64070c8f-cb0e-4cde-9ac7-99c1d65e3973
+check success
+{'responded_at': '2025-09-15 14:48:59', 'status': 'success', 'update_device': {'device_update_token': '92230892-16a8-49c6-95ba-d87b86a8e322', 'update': False, 'update_index': '00000000', 'updated_at': 'Tue, 26 Aug 2025 09:10:36 GMT'}}
+Not Need Updated
+64070c8f-cb0e-4cde-9ac7-99c1d65e3973
+check success
+{'responded_at': '2025-09-15 14:49:45', 'status': 'success', 'update_device': {'device_update_token': '97ce62ee-5f7b-4a17-b3de-78807e3f7a37', 'update': False, 'update_index': '00000000', 'updated_at': 'Tue, 26 Aug 2025 09:10:36 GMT'}}
+Not Need Updated
+64070c8f-cb0e-4cde-9ac7-99c1d65e3973
+check success
+{'responded_at': '2025-09-15 14:50:31', 'status': 'success', 'update_device': {'device_update_token': '997da232-0650-4df3-9414-bb2384132ec8', 'update': False, 'update_index': '00000000', 'updated_at': 'Tue, 26 Aug 2025 09:10:36 GMT'}}
+Not Need Updated
+64070c8f-cb0e-4cde-9ac7-99c1d65e3973
+check success
+{'responded_at': '2025-09-15 14:51:25', 'status': 'success', 'update_device': {'device_update_token': '834c29c9-3648-4971-aceb-908244626339', 'update': False, 'update_index': '00000000', 'updated_at': 'Tue, 26 Aug 2025 09:10:36 GMT'}}
+Not Need Updated
+64070c8f-cb0e-4cde-9ac7-99c1d65e3973
+check success
+{'responded_at': '2025-09-15 14:52:09', 'status': 'success', 'update_device': {'device_update_token': '23807fe8-0fd2-4af4-92c4-de46212a64a2', 'update': False, 'update_index': '00000000', 'updated_at': 'Tue, 26 Aug 2025 09:10:36 GMT'}}
+Not Need Updated
+64070c8f-cb0e-4cde-9ac7-99c1d65e3973
+check success
+{'responded_at': '2025-09-15 14:52:50', 'status': 'success', 'update_device': {'device_update_token': '9105f791-dee6-4ac0-b08c-f0644a7347a6', 'update': False, 'update_index': '00000000', 'updated_at': 'Tue, 26 Aug 2025 09:10:36 GMT'}}
+Not Need Updated
+64070c8f-cb0e-4cde-9ac7-99c1d65e3973
+check success
+{'responded_at': '2025-09-15 14:53:32', 'status': 'success', 'update_device': {'device_update_token': 'a7235c03-7031-4987-9a9b-5fbdeb23e4bc', 'update': False, 'update_index': '00000000', 'updated_at': 'Tue, 26 Aug 2025 09:10:36 GMT'}}
+Not Need Updated
+64070c8f-cb0e-4cde-9ac7-99c1d65e3973
+check success
+{'responded_at': '2025-09-15 15:45:00', 'status': 'success', 'update_device': {'device_update_token': '60a8f826-6d03-46c4-b88e-0f1d0a96af0c', 'update': False, 'update_index': '00000000', 'updated_at': 'Tue, 26 Aug 2025 09:10:36 GMT'}}
+Not Need Updated
+64070c8f-cb0e-4cde-9ac7-99c1d65e3973
+check success
+{'responded_at': '2025-09-15 15:46:11', 'status': 'success', 'update_device': {'device_update_token': '92e05ea1-3bc4-4701-abf8-1958dc93677b', 'update': False, 'update_index': '00000000', 'updated_at': 'Tue, 26 Aug 2025 09:10:36 GMT'}}
+Not Need Updated
+64070c8f-cb0e-4cde-9ac7-99c1d65e3973
+check success
+{'responded_at': '2025-09-15 15:47:22', 'status': 'success', 'update_device': {'device_update_token': '5941fe76-fb79-4449-af8f-559922d26e22', 'update': False, 'update_index': '00000000', 'updated_at': 'Tue, 26 Aug 2025 09:10:36 GMT'}}
+Not Need Updated
+64070c8f-cb0e-4cde-9ac7-99c1d65e3973
+check success
+{'responded_at': '2025-09-15 15:48:20', 'status': 'success', 'update_device': {'device_update_token': '3f4a9cc0-671d-419c-bd1e-9289e82d96a2', 'update': True, 'update_index': '01000000', 'updated_at': 'Tue, 26 Aug 2025 09:10:36 GMT'}}
+Need Update
+<Response [200]>
+{'device': 'test_00_00', 'responded_at': '2025-09-15 15:48:22', 'settings': {'contents': [{'ext': 'jpg', 'id': 'test_user_00-ea3a554d-34dc-4a99-93d9-dd9a486ad2db'}], 'created_at': 'Sat, 13 Sep 2025 16:09:47 GMT', 'type': 'multiple'}, 'status': 'success'}
+test_user_00-ea3a554d-34dc-4a99-93d9-dd9a486ad2db
+/home/tns0/service/content/test_user_00-ea3a554d-34dc-4a99-93d9-dd9a486ad2db.jpg
+64070c8f-cb0e-4cde-9ac7-99c1d65e3973
+3f4a9cc0-671d-419c-bd1e-9289e82d96a2
+{'responded_at': '2025-09-15 15:48:24', 'status': 'success'}
+200
+send return success
+64070c8f-cb0e-4cde-9ac7-99c1d65e3973
+check success
+{'responded_at': '2025-09-15 15:50:25', 'status': 'success', 'update_device': {'device_update_token': '37f5d2d7-b3c5-4711-986a-f75572112146', 'update': False, 'update_index': '00000000', 'updated_at': 'Tue, 26 Aug 2025 09:10:36 GMT'}}
+Not Need Updated
+64070c8f-cb0e-4cde-9ac7-99c1d65e3973
+check success
+{'responded_at': '2025-09-15 15:51:30', 'status': 'success', 'update_device': {'device_update_token': '7f52051a-ec5c-4d5c-b385-dbd45ac3bcbe', 'update': False, 'update_index': '00000000', 'updated_at': 'Tue, 26 Aug 2025 09:10:36 GMT'}}
+Not Need Updated
+  File "/home/tns0/service/system.py", line 47
+    None
+TabError: inconsistent use of tabs and spaces in indentation
+  File "/home/tns0/service/system.py", line 47
+    None
+TabError: inconsistent use of tabs and spaces in indentation
+  File "/home/tns0/service/system.py", line 47
+    None
+TabError: inconsistent use of tabs and spaces in indentation
+  File "/home/tns0/service/system.py", line 47
+    None
+TabError: inconsistent use of tabs and spaces in indentation
+  File "/home/tns0/service/system.py", line 47
+    None
+TabError: inconsistent use of tabs and spaces in indentation
+  File "/home/tns0/service/system.py", line 47
+    None
+TabError: inconsistent use of tabs and spaces in indentation
+                                                                                                                     

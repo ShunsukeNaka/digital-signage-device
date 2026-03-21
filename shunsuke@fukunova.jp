@@ -1,0 +1,134 @@
+import sys
+import requests
+import ds_key
+import time
+import datetime
+import select
+import subprocess
+import os
+import shutil
+from datetime import datetime, timedelta, timezone
+
+return_value = "UPDATE"
+dir_num = "1"
+
+def get_dir_num():
+    num_path = "/home/tns0/service/datas/dirnum.txt"
+    with open(num_path, "r") as f:
+        data = f.read().replace("\n", "")
+    return data
+
+def get_nodir_num():
+    num = get_dir_num().replace("\n", "")
+    updated_num = "2" if num == "1" else "1"
+    return updated_num
+
+def write_dir_num():
+    num = get_dir_num().replace("\n", "")
+    updated_num = "2" if num == "1" else "1"
+    num_path = "/home/tns0/service/datas/dirnum.txt"
+    with open(num_path, "w") as f:
+        f.write(updated_num)
+    return updated_num
+
+def main_system():
+    global return_value
+    try:
+        if not os.path.exists("/home/tns0/service/sec/key.bin"):
+            print("No Login")
+            return "NO_LOGIN"
+
+        dir_num = get_nodir_num()
+        path = "/home/tns0/service/sec/"
+        device_token = ds_key.load_and_decrypt_token(
+            infile=f"{path}device_token.enc", key_file=f"{path}key.bin"
+        )
+        print(device_token)
+
+        check_update_url = "https://be.fukunage-device.fukunova.jp/check_update"
+        get_content_url = "https://be.fukunage-device.fukunova.jp/device/setting/get"
+        download_content_url = "https://be.fukunage-device.fukunova.jp/content/get"
+        check_update_return_url = "https://be.fukunage-device.fukunova.jp/check_update/return"
+
+        body = {"token": device_token}
+
+        response = requests.post(check_update_url, json=body)
+        data = response.json()
+        update_index = data.get("update_device", {}).get("update_index")
+        device_update_token = data.get("update_device", {}).get("device_update_token")
+
+        if data.get("status") == "success":
+            print("check success")
+            if data.get("update_device", {}).get("update"):
+                with open(f"{path}update_index.txt", "w") as f:
+                    f.write(update_index)
+        elif data.get("status") == "no_settings":
+            pass
+        else:
+            print("check failed")
+            print(data)
+
+        if update_index and "1" in update_index:
+            print("Need Update")
+            body = {"token": device_token}
+            response = requests.post(get_content_url, json=body)
+            data = response.json()
+            print(data)
+
+            settings = data.get("settings", {})
+            contents = settings.get("contents", [])
+            for content in contents:
+                print(content.get("id"))
+
+                body = {"token": device_token, "content": {"id": content.get("id")}}
+                response = requests.post(download_content_url, json=body)
+                data = response.json()
+
+                if data.get("status") == "success":
+                    content_url = data["content"]["url"]
+                    content_token = data["content"]["token"]
+                    response = requests.get(
+                        f"{content_url}&device_token={device_token}&token={content_token}"
+                    )
+                    save_path = f"/home/tns0/service/content{dir_num}/{content['id']}.{content['ext']}"
+                    print(save_path)
+
+                    if response.status_code == 200:
+                        with open(save_path, "wb") as f:
+                            f.write(response.content)
+                    else:
+                        error_data = response.json()  # ← 修正: メソッド呼び出し
+                        print(f"Error: Can not save file : {error_data.get('message')}")
+
+            # アップデート完了通知
+            body = {"token": device_token, "device_update_token": device_update_token}
+            response = requests.post(check_update_return_url, json=body)
+            resp_data = response.json()
+            print(device_token, device_update_token, resp_data, response.status_code)
+
+            if response.status_code == 200:
+                print("send return success")
+                return_value = "UPDATE"
+                num = write_dir_num()
+                num = get_nodir_num()
+                print(num)
+                content_dir = f"/home/tns0/service/content{num}"
+                for item in os.listdir(content_dir):
+                    item_path = os.path.join(content_dir, item)
+                    if os.path.isfile(item_path) or os.path.islink(item_path):
+                        os.remove(item_path)
+                    else:
+                        shutil.rmtree(item_path)
+                return "UPDATE"
+            else:
+                print("Not Need Updated")
+                return_value = "NO_UPDATE"
+                return "NO_UPDATE"
+
+    except Exception as e:
+        print(e)
+        return "ERROR"
+
+if __name__ == "__main__":
+    main_system()
+
